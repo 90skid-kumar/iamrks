@@ -2,8 +2,127 @@
 <html>
 	<head>
 		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+		<!-------google fonts------->
+		<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+        <!--------css link--------->
+		<link rel="stylesheet" type="text/css" href="index.css">
+
 	</head>
 	<body>
-		
+		<div class="wrapper">
+			<!--------------navbar starts here--------->
+			<nav>
+				<span id="brand">
+					<a href="index.html">Rajat Sharma</a>
+				</span>
+				<ul id="menu">
+					<li><a href="index.html">home<span>.</span></a></li>
+					<li><a href="work.html">work<span>.</span></a></li>
+					<li><a href="about.html">about<span>.</span></a></li>
+					<li><a href="contact.html">contact<span>.</span></a></li>
+				</ul>
+				<div id="toggle">
+					<div class="span">menu</div>
+				</div>
+			</nav>
+			<div id="resize">
+				<div class="close-btn">close</div>
+			</div>
+			<ul id="menu">
+				<li><a href="index.html">home<span>.</span></a></li>
+				<li><a href="work.html">work<span>.</span></a></li>
+				<li><a href="about.html">about<span>.</span></a></li>
+				<li><a href="contact.html">contact<span>.</span></a></li>
+			</ul>
+			<!------------navbar ends here------>
+			<!------------header animation------>
+			<div class="hero">
+				<div class="header">
+					<h1 class="line anim-typewriter">I make brands matter for you</h1>
+				</div>
+			</div>
+			<div class="scroll-down"></div>
+			<!-----header animation ends here--->
+			<!----project section starts here--->
+			<div class="container-fluid">
+				<br><br><br>
+				<h6>selected projetcs</h6>
+				<div class="vertical"></div>
+				<br>
+				<div class="whitespace"></div>
+				<div class="whitespace"></div>
+				<div class="row">
+					<div class="col-lg-8"></div>
+					<div class="col-lg-4 project project1" onclick="location.href='project.html'"></div>
+				</div>
+				<div class="whitespace"></div>
+				<div class="row">
+					<div class="col-lg-6 project project2" onclick="location.href='project.html'"></div>
+					<div class="col-lg-6"></div>
+				</div>
+				<div class="whitespace"></div>
+				<div class="row">
+					<div class="col-lg-7"></div>
+					<div class="col-lg-4 project project3" onclick="location.href='project.html'"></div>
+					<div class="col-lg-1"></div>
+				</div>
+				<div class="whitespace"></div>
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-5 project project4" onclick="location.href='project.html'"></div>
+					<div class="col-lg-6"></div>
+				</div>
+				<div class="whitespace"></div>
+			</div>
+			<!----project section ends here----->
+			<!-----footer starts here----->
+			<div class="footer">
+				<div class="container">
+					<br><br>
+					<div class="collab">
+						<div class="row">
+							<div class="col-lg-12">
+								<p>Got an interesting project, I can help you.</p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="hr">
+						<div class="row"></div>
+					</div>
+					<br><br>
+					<div class="info">
+						<div class="row">
+							<div class="col-lg-4" id="personal">
+								<p>connect with me</p>
+								<h4>ig @rajat</h4>
+								<br><br>
+							</div>
+							<div class="col-lg-4" id="media">
+								<p>follow me</p>
+								<ul>
+									<li id="fb">fb</li>
+									<li id="ig">ig</li>
+									<li id="gm">gm</li>
+									<li id="wa">Wapp</li>
+								</ul>
+								<br><br>
+							</div>
+							<div class="col-lg-4" id="address">
+								<p>say hello</p>
+								<h4>sharmarajat2chd@gmail.com</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
