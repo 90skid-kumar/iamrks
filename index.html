@@ -9,6 +9,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+
+
 		<!-------google fonts------->
 		<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
         <!--------css link--------->
@@ -34,18 +36,19 @@
 			</nav>
 			<div id="resize">
 				<div class="close-btn">close</div>
-			</div>
-			<ul id="menu">
+				<ul id="menu">
 				<li><a href="index.html">home<span>.</span></a></li>
 				<li><a href="work.html">work<span>.</span></a></li>
 				<li><a href="about.html">about<span>.</span></a></li>
 				<li><a href="contact.html">contact<span>.</span></a></li>
 			</ul>
+			</div>
+			
 			<!------------navbar ends here------>
 			<!------------header animation------>
 			<div class="hero">
 				<div class="header">
-					<h1 class="line anim-typewriter">I make brands matter for you</h1>
+					<h1 class="line anim-typewriter">I make brands matter for you.</h1>
 				</div>
 			</div>
 			<div class="scroll-down"></div>
@@ -124,5 +127,34 @@
 				</div>
 			</div>
 		</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js">
+        	                               
+        </script>
+
+		<script>
+			// navigation starts here ---------------
+             
+             $("#toggle").click(function() {
+             	$(this).toggleClass('on');
+             	$("#resize").toggleClass('active');
+             })
+
+             $("#resize ul li a").click(function() {
+             	$(this).toggleClass('on');
+             	$("#resize").toggleClass('active');
+             })
+
+             $('.close-btn').click(function() {
+             	$(this).toggleClass('on');
+             	$("#resize").toggleClass('active');
+             })
+			// navigation ends here -----------------
+
+			//load content of the page--------------
+            gsap.to("#menu li a", 1, {delay:1, opacity:1, ease: "elastic.inOut(1, 0.3)", y: -500}, 3);
+
+			// load content of the page ends here----
+		</script>
 	</body>
 </html>
