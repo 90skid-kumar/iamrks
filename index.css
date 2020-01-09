@@ -30,40 +30,10 @@ html,body{
     transform: translateY(-50%);
 }
 
-.anim-typewriter{
-	animation: typewriter 4s steps(40) 1s 1 normal both,
-	blinkTextCursor 500ms steps(40) infinite normal;
+#typed{
+	font-style: italic;
+	text-transform: uppercase;
 }
-
-@keyframes typewriter{
-	from {
-		width: 0;
-	}
-	to {
-		width: 18em;
-	}
-}
-
-@media(max-width: 768px){
-	@keyframes typewriter{
-		from {
-		width: 0;
-	}
-	to {
-		width: 10em;
-	}
-	}
-}
-
-@keyframes blinkTextCursor{
-	from{
-		border-right-color: rgba(255, 255, 255, 0.75);
-	}
-	to {
-		border-right-color: transparent;
-	}
-}
-
 /*-----navigation---------*/
 
 nav{
@@ -113,7 +83,6 @@ nav #menu li span{
 
 nav #menu li a{
 	color: #fff;
-	opacity: 0
 }
 
 nav #menu li a:hover{
@@ -226,26 +195,31 @@ nav #menu li a:hover{
 	}
 }
 
-/*-----hero section---------*/
-
-.hero{
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/*-----typewriter section section---------*/
+.typewriter-sec{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
-.hero h1{
-	font-weight: lighter;
-	text-align: center;
-	letter-spacing: -2px;
-	line-height: 58px;
+.typewriter-sec img{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media(max-width: 768px) {
-	.header h1{
-		font-size: 26px;
+	.header h4{
+	font-size: 16px;
 	}
+    .typewriter-sec p{
+	font-size: 15px;
+	padding: 0 15px;
+}
 }
 /*-----scroll down and icon animation---------*/
 
@@ -283,14 +257,6 @@ nav #menu li a:hover{
 /*-----projects section---------*/
 h6{
 	text-align: center;
-}
-
-.vertical{
-	border-left: 1px solid #fff;
-	height: 80px;
-	position: absolute;
-	left: 50%;
-	margin-top: 80px;
 }
 
 .project{
@@ -381,6 +347,15 @@ h6{
 		display: none;
 	} 
 }
+
+@media(max-width: 992px) {
+	.project1::after, 
+	.project2::after, 
+	.project3::after, 
+	.project4::after{
+		display: none;
+	} 
+}
 /*-----footer section---------*/
 .collab{
 	text-align: right;
@@ -436,6 +411,98 @@ h6{
 	}
 
 }
+
+@media(max-width: 992px){
+	.collab,
+	#personal,
+	#media,
+	#address{
+		text-align: center;
+	}
+
+	.info ul{
+		
+		padding: 0;
+	}
+}
+
+/*------work page-----------*/
+.work p{
+	color: grey;
+}
+@media(max-width: 768px){
+	.work{
+		padding-top: 85px;
+		margin: 0 15px;
+	}
+}
+
+/*------about page---------*/
+.about-info p{
+	color: grey;
+}
+.image{
+	background: url(../iamrks/images/testImage.jpg) no-repeat 50%, 50%;
+	background-size: cover;
+	height: 400px;
+
+}
+@media(max-width: 768px){
+	.about{
+		padding-top: 90px;
+	}
+}
 /*-----contact form---------*/
+.contact p{
+	color: grey;
+}
+
+.contact-form label{
+	color: grey;
+}
+
+.form-group{
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.contact-form input,
+.contact-form textarea{
+	border: none;
+	outline: none;
+    border-radius: inherit;
+	background: none;
+	padding: 0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+	background: #0f0f0f;
+	box-shadow: none;
+	outline: none;
+	font-family: "Roboto Mono"!important;
+	color: #fff;
+}
+
+.send{
+	  text-transform: uppercase;
+	  padding: 20px 30px;
+	  background: transparent;
+	  color: #dfdfdf;
+	  letter-spacing: 2px;
+}
+
+.send:hover{
+	background: #dfdfdf;
+	color: #101010;
+}
+@media(max-width: 768px){
+	.contact{
+		padding-top: 90px;
+	}
+
+	.contact-form{
+		width: 90%;
+	}
+}
 /*-----basic styling---------*/
 /*-----basic styling---------*/
