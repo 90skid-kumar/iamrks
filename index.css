@@ -9,6 +9,14 @@ html,body{
 	color: #fff!important;
 }
 
+h5{
+	text-transform: uppercase;
+}
+p{
+	color: #A0A1A0;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+}
 .whitespace{
 	width: 100%;
 	height: 100px;
@@ -16,6 +24,12 @@ html,body{
 @media(max-width: 768px){
 	.whitespace{
 		display: none;
+	}
+}
+
+@media(max-width: 992px){
+	.whitespace{
+		height: 30px;
 	}
 }
 /*-----typewriter effect---------*/
@@ -31,8 +45,7 @@ html,body{
 }
 
 #typed{
-	font-style: italic;
-	text-transform: uppercase;
+	color: #fff;
 }
 /*-----navigation---------*/
 
@@ -83,10 +96,13 @@ nav #menu li span{
 
 nav #menu li a{
 	color: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
 }
 
 nav #menu li a:hover{
-	text-decoration: none;
+	text-decoration: line-through;
+
 }
 
 #toggle{
@@ -195,28 +211,36 @@ nav #menu li a:hover{
 	}
 }
 
-/*-----typewriter section section---------*/
-.typewriter-sec{
+/*-----header section section---------*/
+.header{
     height: 100vh;
     display: grid;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.typewriter-sec img{
-	width: 150px;
-	height: 150px;
+.header img{
+	width: 130px;
+	height: 130px;
 	border-radius: 100%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	top: -100px;
 }
+
+.header h5{
+	color: #A0A1A0;
+}
+
+
 
 @media(max-width: 768px) {
 	.header h4{
 	font-size: 16px;
 	}
-    .typewriter-sec p{
+    .header p{
 	font-size: 15px;
 	padding: 0 15px;
 }
@@ -264,72 +288,63 @@ h6{
 }
 
 .project1{
-	background: url(../iamrks/images/testImage.jpg) no-repeat 50%, 50%;
+	background: url(../iamrks/images/project1.jpg) no-repeat 70%, 100%;
 	background-size: cover;
 }
 
-.project1::after{
-	content: "timeless flow.";
-    font-size: 36px;
-    display: block;
-    position: relative;
-    left: -60%;
-    top: 8%;
-    right: 0;
-    bottom: 0;
 
-}
 
 .project2{
-	background: url(../iamrks/images/testImage.jpg) no-repeat 50%, 50%;
+	background: url(../iamrks/images/project2.jpg) no-repeat 70%, 100%;
 	background-size: cover;
 }
 
-.project2::after{
-	content: "foretime.";
-    font-size: 36px;
-    display: block;
-    position: relative;
-    left: 90%;
-    top: 80%;
-    right: 0;
-    bottom: 0;
 
-}
 
 .project3{
-	background: url(../iamrks/images/testImage.jpg) no-repeat 50%, 50%;
+	background: url(../iamrks/images/project3.jpg) no-repeat 70%, 100%;
 	background-size: cover;
-}
-
-.project3::after{
-	content: "never again.";
-    font-size: 36px;
-    display: block;
-    position: relative;
-    left: -50%;
-    top: 80%;
-    right: 0;
-    bottom: 0;
-
 }
 
 .project4{
-	background: url(../iamrks/images/testImage.jpg) no-repeat 50%, 50%;
+	background: url(../iamrks/images/project4.jpg) no-repeat 70%, 100%;
 	background-size: cover;
 }
 
-.project4::after{
-	content: "departure.";
-    font-size: 36px;
-    display: block;
-    position: relative;
-    left: 90%;
-    top: 10%;
-    right: 0;
-    bottom: 0;
+.tag{
+	position: relative;
+    font-size: 20px;
+    padding: 10px;
+    background: #945d3d;
+	color: #fff;
+	text-transform: uppercase;
 
 }
+
+.tag:hover{
+	text-decoration: line-through;
+}
+
+.tag1{
+	top: 70%;
+    left: -20%;
+}
+
+.tag2{
+    left: 90%;
+    top: 18%;
+
+}
+
+.tag3{
+    left: -60%;
+    top: 58%;
+}
+
+.tag4{
+    left: 90%;
+    top: 18%;
+   }
 
 @media(max-width: 768px) {
 	.project{
@@ -339,21 +354,98 @@ h6{
 	.vertical{
 		display: none;
 	}
-
+/*
 	.project1::after, 
 	.project2::after, 
 	.project3::after, 
 	.project4::after{
-		display: none;
+		left: -15px;
+	    top: -1px;
+	    border: 1px solid #0f0f0f;
+	    background: yellow;
+	    color: #0f0f0f;
+	    text-transform: uppercase;
+}
+*/
+}
+@media(max-width: 992px) {
+	.tag1, 
+	.tag2, 
+	.tag3, 
+	.tag4{
+	    left: -15px;
+    top: 8px;
+    font-size: 16px;
 	} 
 }
 
-@media(max-width: 992px) {
-	.project1::after, 
-	.project2::after, 
-	.project3::after, 
-	.project4::after{
+/*------about page---------*/
+.about{
+	height: 500px;
+	
+}
+
+.about1{
+	background: url(../iamrks/images/about1.jpg) no-repeat 70%, 100%;
+	background-size: cover;
+}
+
+.about2{
+	background: url(../iamrks/images/about2.jpg) no-repeat 70%, 100%;
+	background-size: cover;
+}
+
+.about3{
+	background: url(../iamrks/images/about4.jpg) no-repeat 70%, 100%;
+	background-size: cover;
+}
+
+.about4{
+	padding: 0;
+}
+
+.tag5{
+    left: -20%;
+    top:70%;
+}
+
+.tag6{
+    left: 90%;
+    top: 18%;
+}
+
+.tag7{
+    left: -60%;
+    top: 58%;
+}
+
+.tag8{
+    left: 90%;
+    top: 18%;
+}
+
+iframe{
+	filter: grayscale(1); 
+}
+
+@media(max-width: 768px) {
+	.about{
+		margin: 15px;
+	}
+
+	.vertical{
 		display: none;
+	}
+
+}
+@media(max-width: 992px) {
+	.tag5, 
+	.tag6, 
+	.tag7, 
+	.tag8{
+	    left: -15px;
+    top: 8px;
+    font-size: 16px;
 	} 
 }
 /*-----footer section---------*/
@@ -364,6 +456,8 @@ h6{
 .collab p{
 	font-weight: lighter!important;
 	margin-bottom: 20px;
+	text-align: right;
+	color: #fff
 }
 
 .hr{
@@ -377,8 +471,9 @@ h6{
 }
 
 .info p{
-	color: grey;
-	font-weight: lighter;
+	color: #A0A1A0;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 
 .info li{
@@ -386,15 +481,17 @@ h6{
 }
 
 #media, #address{
-	text-align: right;
+	text-align: left;
 }
 
 #media ul{
 	list-style: none;
+	padding-left: 0;
 }
 
 #media ul li{
 	display: inline-block;
+	padding-right: 10px;
 }
 
 @media(max-width: 768px) {
@@ -426,39 +523,14 @@ h6{
 	}
 }
 
-/*------work page-----------*/
-.work p{
-	color: grey;
-}
-@media(max-width: 768px){
-	.work{
-		padding-top: 85px;
-		margin: 0 15px;
-	}
-}
 
-/*------about page---------*/
-.about-info p{
-	color: grey;
-}
-.image{
-	background: url(../iamrks/images/testImage.jpg) no-repeat 50%, 50%;
-	background-size: cover;
-	height: 400px;
-
-}
-@media(max-width: 768px){
-	.about{
-		padding-top: 90px;
-	}
-}
 /*-----contact form---------*/
 .contact p{
-	color: grey;
+	color: #A0A1A0;
 }
 
 .contact-form label{
-	color: grey;
+	color: #A0A1A0;
 }
 
 .form-group{
